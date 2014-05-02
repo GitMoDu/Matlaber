@@ -19,7 +19,8 @@ The work in the thesis also provides another software tool, one that converts pr
 
 Dependencies
 ========
-Matlaber uses one special m-file that enables the GOTO functionality, found in IL code, to work in Matlab.
+Matlaber runs on pure .NET 3.5 , mainly for the interface and string handling functions. It's porting to other languages should be hassle free.
+It also uses one special m-file that enables the GOTO functionality, found in IL code, to work in Matlab.
 It's credit goes to Husam Aldahiyat who published the file and graciously allowed it to be used in the this work. 
 This file is included in the Matlaber project, was published under a BSD license and can be found here: http://www.mathworks.com/matlabcentral/fileexchange/26949-matlab-goto-statement
 
