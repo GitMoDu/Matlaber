@@ -1,0 +1,72 @@
+﻿PROGRAM WATER_TANK (*Controls the water level of a tank*)
+
+VAR  
+
+Timer1:TON;
+Counter1 : CTU;
+END_VAR
+
+VAR_GLOBAL
+
+END_VAR
+
+VAR_INPUT
+
+Maximum_Level_Switch : BOOL;
+Minimum_Level_Switch : BOOL;
+External_Counter_Reset:BOOL;
+
+END_VAR
+
+
+VAR_OUTPUT
+
+alarm_counter: int;
+valve:bool;
+Light_Signal_Alarm:bool;
+Buzz_Signal_Alarm:   BooL;
+
+END_VAR
+
+
+R valve;
+R Counter1.CU;
+
+
+LD Maximum_Level_Switch;
+JMPCN NOTMAXIMUM
+S valve;
+S Counter1.CU;
+JMP ALLDONE
+NOTMAXIMUM:
+LD Minimum_Level_Switch;
+JMPCN NOTMINIMUM
+LD 0;
+ST valve;
+ST Counter1.CU;
+JMP ALLDONE
+
+NOTMINIMUM:
+R valve;
+R Counter1.CU;
+
+ALLDONE:
+
+CAL Counter1(Reset:=External_Counter_Reset,PV:=8,CV=>alarm_counter)
+
+CAL Timer1(IN:=Counter1.Q,PT:=3,ET=>0)
+
+
+
+
+LD Timer1.Q
+ST Buzz_Signal_Alarm;
+
+
+
+LD Counter1.Q;
+ST Light_Signal_Alarm;
+
+
+
+END_PROGRAM
