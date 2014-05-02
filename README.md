@@ -21,5 +21,5 @@ Dependencies
 ========
 Matlaber uses one special m-file that enables the GOTO functionality, found in IL code, to work in Matlab.
 It's credit goes to Husam Aldahiyat who published the file and graciously allowed it to be used in the this work. 
-This file is part of the Matlaber project and comes with a BSD license and can be found here: http://www.mathworks.com/matlabcentral/fileexchange/26949-matlab-goto-statement
+This file is included in the Matlaber project, was published under a BSD license and can be found here: http://www.mathworks.com/matlabcentral/fileexchange/26949-matlab-goto-statement
 
