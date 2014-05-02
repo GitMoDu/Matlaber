@@ -1,4 +1,4 @@
 Matlaber
 ========
 
-IEC 61131-3 compliant translation software to emulate any PLC control program in the Matlab/Simulink environment
+Matlaber is a translation software to replicate PLC control programs in the Matlab/Simulink environment.
