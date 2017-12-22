@@ -6,6 +6,8 @@ Matlaber is a conversion software to simulate PLC control programs in the Matlab
 PLC code in standard IEC-61131-3 IL is translated into a Matlab m-file(s) which can then be inserted in a Simulink "function" box, with the adequate inputs and outputs. With this, the "function" box behaves exactly like the PLC program in IL should.
 This provides a simulated assessment of the industrial process modelled by the PLC program, making easier its test and validation. Although designed for teaching, both method and tool can also be applied in industrial projects.
 
+![](https://raw.githubusercontent.com/GitMoDu/Matlaber/master/Media/Matlaberscreenshot.jpg)
+
 Motivation
 ========
 
